@@ -34,4 +34,13 @@ public class DialogHelper {
     public static void showCommonWithOnlyMsg(Activity activity, String key, String msg) {
         showCommon(activity, key, "提示", msg, "确定", "取消");
     }
+
+    /**
+     *
+     */
+
+    public static void showNotice(Activity activity) {
+        NoticeDialogFmt noticeDialogFmt = new NoticeDialogFmt();
+        noticeDialogFmt.show(activity.getFragmentManager(), "noticeDialogFmt");
+    }
 }

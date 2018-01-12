@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity implements
                 DialogHelper.showCommon(this, "btn1", "提示", "我是dialog1", "确定", "取消");
                 break;
             case R.id.btn2:
-                DialogHelper.showCommonWithOnlyMsg(this, "btn2", "我是dialog2");
+                DialogHelper.showCommonWithOnlyMsg(this,"btn2","我是dialog2");
                 break;
             case R.id.btn3:
+                DialogHelper.showNotice(this);
                 break;
         }
     }
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements
                 Toast.makeText(MainActivity.this, "dialog2", Toast.LENGTH_SHORT).show();
                 break;
             default:
+                Toast.makeText(MainActivity.this, "nokey", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
