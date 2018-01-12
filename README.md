@@ -1,9 +1,9 @@
 # Dialogs
 DialogFragment实现统一对话框
 
-/**
- * 基础 dialog 
- */
+
+ // 基础 dialog 
+ 
 
 public class BaseCommonDialogFmt extends DialogFragment {
     @Override
@@ -22,9 +22,9 @@ public class BaseCommonDialogFmt extends DialogFragment {
 }
 
 
-/**
- * 底部dialog
- */
+
+ // 底部dialog
+ 
 
 public class BottomDialogFmt extends DialogFragment {
 
