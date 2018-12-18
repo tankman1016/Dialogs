@@ -17,7 +17,7 @@ import com.lin.dialogs.listener.OnSureListener;
  * 2018-12-07 使用建造者模式重构
  */
 
-public class CommonDialog extends BaseCommonDialogFmt {
+public class CommonDialog extends BaseDialog {
 
     TextView tvTitle;
     TextView tvMessage;
@@ -141,17 +141,17 @@ public class CommonDialog extends BaseCommonDialogFmt {
         }
 
         public CommonDialog create() {
-            CommonDialog commonDialog = new CommonDialog();
+            CommonDialog commonCommonDialog = new CommonDialog();
             Bundle args = new Bundle();
             args.putString("title", this.title);
             args.putString("msg", this.msg);
             args.putString("sure_text", this.sure_text);
             args.putString("cancel_text", this.cancel_text);
             args.putBoolean("cancelable", this.cancelable);
-            commonDialog.setArguments(args);
-            commonDialog.setOnSureListener(onSureListener);
-            commonDialog.setOnCancelListener(onCancelListener);
-            return commonDialog;
+            commonCommonDialog.setArguments(args);
+            commonCommonDialog.setOnSureListener(onSureListener);
+            commonCommonDialog.setOnCancelListener(onCancelListener);
+            return commonCommonDialog;
         }
     }
 

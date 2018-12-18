@@ -5,11 +5,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.TranslateAnimation;
 
 /**
  * 底部dialog
@@ -31,7 +28,7 @@ public class BottomDialogFmt extends DialogFragment {
             //设置动画
             window.setWindowAnimations(R.style.BottomDialogAnimation);
         } else {
-            Log.v("Lin2", "Dialog error:bottom");
+            Log.v("Lin2", "CommonDialog error:bottom");
         }
     }
 

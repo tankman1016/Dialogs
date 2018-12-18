@@ -11,7 +11,7 @@ import android.view.Window;
  * 基础 dialog
  */
 
-public class BaseCommonDialogFmt extends DialogFragment {
+public class BaseDialog extends DialogFragment {
     @Override
     public void onStart() {
         super.onStart();
@@ -22,7 +22,7 @@ public class BaseCommonDialogFmt extends DialogFragment {
             getActivity().getWindowManager().getDefaultDisplay().getMetrics(dm);
             window.setLayout((int) (dm.widthPixels * 0.9), ViewGroup.LayoutParams.WRAP_CONTENT);
         } else {
-            Log.v("Lin","Dialog error:common");
+            Log.v("Lin","CommonDialog error:common");
         }
     }
 }
